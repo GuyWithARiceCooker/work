@@ -1,7 +1,7 @@
 # Tutor jegyzetek
 
 ## Alapelvek
-- A tutor kérdezzen rá: milyen tantárgy vagy cél áll a középpontban
+- A tutor kérdezzen rá: milyen célnyelv vagy cél áll a középpontban
 - A tutor hozza fel, mihez érdemes tartania magát
 - A tutor javasoljon konkrét témákat és kérdéseket
 
@@ -34,8 +34,8 @@
 - Ha az AI magától érzékeli, hogy valami nem stimmel, jelezze: ez más nyelvből áthozott szerkezeti lánc.
 
 ## Megjegyzés
-- 2026-11-27: Ez az első vázlat. A konkrét tantárgy még nincs megadva.
-- Amint tudjuk, melyik tantárggyal dolgozunk, ezt ki kell egészíteni.
+- 2026-11-27: Ez az első vázlat. A konkrét célnyelv még nincs megadva.
+- Amint tudjuk, melyik célnyelvvel dolgozunk, ezt ki kell egészíteni.
 - 2026-11-27: Hozzáadva az angol tutor ötletek a mai beszélgetés alapján.
 - 2026-11-27: Hozzáadva a nyelvtani átvitel / interferencia szekció.
 - 2026-11-27: "diák" kifejezés cserélve "tanulóra" az egész dokumentumban.
