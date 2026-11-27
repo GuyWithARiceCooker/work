@@ -27,51 +27,6 @@
       margin: 0 auto;
       padding: 28px 20px 72px;
     }
-    .topbar {
-      position: relative;
-      min-height: 44px;
-      margin: 0 0 28px;
-    }
-    .back {
-      margin: 0 90px 0 0;
-    }
-    .back a {
-      display: block;
-      padding: 12px 16px;
-      border: 2px solid #111;
-      background: #fff;
-      color: #111;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .back a:visited {
-      color: #111;
-    }
-    .back a:focus {
-      outline: 2px solid #111;
-      outline-offset: 2px;
-    }
-    .theme-toggle {
-      position: absolute;
-      top: 0;
-      right: 0;
-      -webkit-appearance: none;
-      appearance: none;
-      margin: 0;
-      padding: 8px 12px;
-      border: 2px solid #111;
-      background: #fff;
-      color: #111;
-      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 1;
-      cursor: pointer;
-    }
-    .theme-toggle:focus {
-      outline: 2px solid #111;
-      outline-offset: 2px;
-    }
     h1, h2, h3 {
       font-family: Georgia, "Iowan Old Style", Palatino, "Times New Roman", Times, serif;
       font-weight: normal;
@@ -148,6 +103,186 @@
       border-top: 1px solid #ddd;
       color: #666;
       font-size: 14px;
+    }
+
+    .toprow {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      margin: 0 0 28px;
+      padding: 0;
+      background: none;
+    }
+    .toprow-left {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      min-width: 0;
+    }
+    .wordmark {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -1.6px;
+      white-space: nowrap;
+      color: #111;
+      text-decoration: none;
+    }
+    a.wordmark, a.wordmark:visited {
+      color: #111;
+    }
+    a.wordmark:focus {
+      outline: 2px solid #111;
+      outline-offset: 2px;
+    }
+    .back {
+      display: inline;
+      margin: 0 0 0 16px;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: #111;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1;
+      text-decoration: underline;
+    }
+    .back:visited {
+      color: #111;
+    }
+    .back:focus {
+      outline: 2px solid #111;
+      outline-offset: 2px;
+    }
+    .theme-toggle {
+      position: static;
+      -webkit-appearance: none;
+      appearance: none;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      flex: 0 0 auto;
+      margin: 0 0 0 12px;
+      padding: 7px 8px;
+      min-width: 52px;
+      min-height: 38px;
+      border: 1.5px solid #111;
+      border-radius: 0;
+      background: #fff;
+      color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .theme-toggle:focus {
+      outline: 2px solid #111;
+      outline-offset: 2px;
+    }
+    @media screen and (min-width: 720px) {
+      .toprow {
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-bottom: 28px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+    .loop {
+      margin: 40px 0;
+      max-width: 640px;
+      width: 100%;
+    }
+    .loop-canvas {
+      position: relative;
+    }
+    .loop-arrows {
+      display: none;
+      color: #111;
+    }
+    .loop-box {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0 0 8px;
+      padding: 14px 16px;
+      border: 2px solid #111;
+      background: #fff;
+      color: #111;
+    }
+    .loop-label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #111;
+    }
+    .loop-sub {
+      margin-top: 6px;
+      font-size: 13px;
+      line-height: 1.3;
+      color: #666;
+    }
+    .loop-down {
+      display: block;
+      margin: 0 0 8px;
+      height: 28px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px;
+      color: #111;
+    }
+    .loop-back {
+      margin: 8px 0 0;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+    }
+    @media screen and (min-width: 560px) {
+      .loop {
+        margin: 44px auto;
+      }
+      .loop-canvas {
+        width: 100%;
+        height: 0;
+        padding-top: 111.11%;
+      }
+      .loop-arrows {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+      .loop-down, .loop-back {
+        display: none;
+      }
+      .loop-box {
+        position: absolute;
+        width: 200px;
+        margin: 0;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .loop-n0 { left: 50.00%; top: 23.25%; }
+      .loop-n1 { left: 78.27%; top: 41.73%; }
+      .loop-n2 { left: 67.47%; top: 71.64%; }
+      .loop-n3 { left: 32.53%; top: 71.64%; }
+      .loop-n4 { left: 21.73%; top: 41.73%; }
     }
     @media (prefers-color-scheme: dark) {
 
@@ -251,6 +386,69 @@
         background: #111;
         border-color: #333;
       }
+    /* toprow + loop, dark */
+    @media (prefers-color-scheme: dark) {
+
+      html:not([data-theme="light"]) .wordmark, html:not([data-theme="light"]) a.wordmark, html:not([data-theme="light"]) a.wordmark:visited {
+        color: #eee;
+      }
+      html:not([data-theme="light"]) a.wordmark:focus {
+        outline-color: #eee;
+      }
+      html:not([data-theme="light"]) .back, html:not([data-theme="light"]) .back:visited {
+        color: #eee;
+      }
+      html:not([data-theme="light"]) .back:focus {
+        outline-color: #eee;
+      }
+      html:not([data-theme="light"]) .loop-arrows {
+        color: #eee;
+      }
+      html:not([data-theme="light"]) .loop-box {
+        border-color: #eee;
+        background: #111;
+        color: #eee;
+      }
+      html:not([data-theme="light"]) .loop-label {
+        color: #eee;
+      }
+      html:not([data-theme="light"]) .loop-sub, html:not([data-theme="light"]) .loop-back {
+        color: #999;
+      }
+      html:not([data-theme="light"]) .loop-down {
+        color: #eee;
+      }
+
+    }
+      html[data-theme="dark"] .wordmark, html[data-theme="dark"] a.wordmark, html[data-theme="dark"] a.wordmark:visited {
+        color: #eee;
+      }
+      html[data-theme="dark"] a.wordmark:focus {
+        outline-color: #eee;
+      }
+      html[data-theme="dark"] .back, html[data-theme="dark"] .back:visited {
+        color: #eee;
+      }
+      html[data-theme="dark"] .back:focus {
+        outline-color: #eee;
+      }
+      html[data-theme="dark"] .loop-arrows {
+        color: #eee;
+      }
+      html[data-theme="dark"] .loop-box {
+        border-color: #eee;
+        background: #111;
+        color: #eee;
+      }
+      html[data-theme="dark"] .loop-label {
+        color: #eee;
+      }
+      html[data-theme="dark"] .loop-sub, html[data-theme="dark"] .loop-back {
+        color: #999;
+      }
+      html[data-theme="dark"] .loop-down {
+        color: #eee;
+      }
   </style>
   <script type="text/javascript">
     (function () {
@@ -264,8 +462,11 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <p class="back"><a href="index.html">Back to Work</a></p>
+    <div class="toprow">
+      <div class="toprow-left">
+        <a class="wordmark" href="index.html">Work</a>
+        <a class="back" href="index.html">Back to Work</a>
+      </div>
       <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme" title="Switch to dark theme">DRK</button>
     </div>
 
@@ -397,7 +598,48 @@
     <p>Items come from the conversations themselves, as My words does today, tagged by language, never from a giant pre-made list.</p>
 
     <h2>8. How the tutor sequences practice</h2>
-    <p class="flow">Talk (voice-first session) → Capture new items and errors → Schedule (FSRS per item) → Review (due items first) → Reuse (due items woven into talk) → Talk (next session; the loop continues).</p>
+    <figure class="loop" aria-label="Practice loop: Talk, Capture, Schedule, Review, Reuse, then back to Talk.">
+      <div class="loop-canvas">
+        <svg class="loop-arrows" viewBox="0 0 720 800" aria-hidden="true" focusable="false">
+          <defs>
+            <marker id="loop-ah" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+              <path d="M 0 0 L 10 4 L 0 8 Z"></path>
+            </marker>
+          </defs>
+          <path class="loop-arc" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" marker-end="url(#loop-ah)" d="M 468.0 222.7 Q 488.8 222.7 488.8 275.9"></path>
+          <path class="loop-arc" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" marker-end="url(#loop-ah)" d="M 547.5 383.9 Q 547.5 460.9 547.5 515.1"></path>
+          <path class="loop-arc" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" marker-end="url(#loop-ah)" d="M 380.6 621.2 Q 360.0 645.1 344.6 627.3"></path>
+          <path class="loop-arc" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" marker-end="url(#loop-ah)" d="M 172.5 523.1 Q 172.5 460.9 172.5 391.9"></path>
+          <path class="loop-arc" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" marker-end="url(#loop-ah)" d="M 231.2 283.9 Q 231.2 222.7 244.0 222.7"></path>
+        </svg>
+        <div class="loop-box loop-n0">
+          <div class="loop-label">Talk</div>
+          <div class="loop-sub">voice-first session</div>
+        </div>
+        <span class="loop-down" aria-hidden="true">&#8595;</span>
+        <div class="loop-box loop-n1">
+          <div class="loop-label">Capture</div>
+          <div class="loop-sub">new items and errors</div>
+        </div>
+        <span class="loop-down" aria-hidden="true">&#8595;</span>
+        <div class="loop-box loop-n2">
+          <div class="loop-label">Schedule</div>
+          <div class="loop-sub">FSRS per item</div>
+        </div>
+        <span class="loop-down" aria-hidden="true">&#8595;</span>
+        <div class="loop-box loop-n3">
+          <div class="loop-label">Review</div>
+          <div class="loop-sub">due items first</div>
+        </div>
+        <span class="loop-down" aria-hidden="true">&#8595;</span>
+        <div class="loop-box loop-n4">
+          <div class="loop-label">Reuse</div>
+          <div class="loop-sub">due items woven into talk</div>
+        </div>
+        <p class="loop-back">the loop continues to Talk</p>
+      </div>
+    </figure>
+
     <ol>
       <li>Due reviews come first, short and gentle, rated Again, Hard, Good or Easy (FSRS, aiming for 90% recall), with no guilt if some are left for later.</li>
       <li>The tutor then steers the conversation so that due and shaky items come up naturally, and counts a correct unprompted use as a strong review.</li>
