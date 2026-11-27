@@ -20,6 +20,13 @@
 - Ne árassza el a diákot túl sok infóval egyszerre
 - Építsen a diák válaszaira
 
+## Angol tutor ötletek (2026-11-27)
+1. **Szógyakorlat kifejezésekben** — ne külön szavakat dobjon, hanem rövid, használható mondatokban (pl. "I'd like a coffee" a "coffee" helyett). Így a szókincs és a nyelvtan egyszerre jön.
+2. **Etimológia** — minden új szónál mondja el a szótörténetet, ha van. A kép segít megjegyezni (pl. "barely" a "bare"-ből, azaz "alig van rajta valami").
+3. **Kvízek és kérdések** — a tutor ne csak mondogasson, hanem kérdezzen vissza, és csináltasson gyakorlást (pl. magyar szóra angol megfeleltetés).
+4. **Táblázatos, időzített visszahozás** — a diák jelezheti, melyik szót mennyire akarja, és mikor hozza vissza. Ez az app feladata (AngolMag / Yibu), nem az élő beszélgetésé.
+
 ## Megjegyzés
 - 2026-11-27: Ez az első vázlat. A konkrét tantárgy még nincs megadva.
 - Amint tudjuk, melyik tantárggyal dolgozunk, ezt ki kell egészíteni.
+- 2026-11-27: Hozzáadva az angol tutor ötletek a mai beszélgetés alapján.
