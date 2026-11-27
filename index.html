@@ -6,8 +6,9 @@
   <meta name="description" content="Links and an English description of the Yibu tutor, AngolMag, and related language-learning work.">
   <title>Work — Yibu, AngolMag and related tools</title>
   <style type="text/css">
-    /* Safari 9 / iOS 9: no CSS variables, grid, gap, clamp, sticky, or required JS.
-       Dark mode is an enhancement via prefers-color-scheme only. */
+    /* Safari 9 / iOS 9: no CSS variables, grid, gap, clamp or sticky.
+       Light grayscale is the default. Dark mode follows the system
+       (prefers-color-scheme) and can be overridden with the DRK/LGT control. */
     html {
       -webkit-text-size-adjust: 100%;
       text-size-adjust: 100%;
@@ -15,8 +16,8 @@
     body {
       margin: 0;
       padding: 0;
-      background: #f4f1ea;
-      color: #1c1b18;
+      background: #fff;
+      color: #111;
       font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
       font-size: 18px;
       line-height: 1.55;
@@ -26,10 +27,36 @@
       margin: 0 auto;
       padding: 28px 20px 72px;
     }
+    .topbar {
+      position: relative;
+      min-height: 40px;
+      margin: 0 0 8px;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      -webkit-appearance: none;
+      appearance: none;
+      margin: 0;
+      padding: 8px 12px;
+      border: 2px solid #111;
+      background: #fff;
+      color: #111;
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .theme-toggle:focus {
+      outline: 2px solid #111;
+      outline-offset: 2px;
+    }
     h1, h2, h3 {
       font-family: Georgia, "Iowan Old Style", Palatino, "Times New Roman", Times, serif;
       font-weight: normal;
-      color: #102a2c;
+      color: #111;
       line-height: 1.25;
     }
     h1 {
@@ -40,7 +67,7 @@
     h2 {
       margin: 36px 0 12px;
       font-size: 26px;
-      border-top: 1px solid #1c1b18;
+      border-top: 1px solid #ddd;
       padding-top: 24px;
     }
     h3 {
@@ -57,35 +84,35 @@
       margin: 0 0 6px;
     }
     a {
-      color: #0a5c58;
+      color: #111;
     }
     a:visited {
-      color: #0a5c58;
+      color: #111;
     }
     a:focus {
-      outline: 2px solid #0a5c58;
+      outline: 2px solid #111;
       outline-offset: 2px;
     }
     .tagline {
       margin: 0 0 28px;
-      color: #4a4944;
+      color: #666;
       font-size: 17px;
     }
     .open a, .docs a {
       display: block;
       padding: 14px 16px;
       margin: 0 0 10px;
-      border: 2px solid #1c1b18;
-      background: #ffffff;
-      color: #1c1b18;
+      border: 2px solid #111;
+      background: #fff;
+      color: #111;
       text-decoration: none;
       font-weight: bold;
     }
     .open a:visited, .docs a:visited {
-      color: #1c1b18;
+      color: #111;
     }
     .open a:focus, .docs a:focus {
-      outline: 2px solid #0a5c58;
+      outline: 2px solid #111;
       outline-offset: 2px;
     }
     .label {
@@ -99,56 +126,137 @@
       margin-top: 4px;
       font-weight: normal;
       font-size: 15px;
-      color: #4a4944;
+      color: #666;
     }
     .note {
-      color: #4a4944;
+      color: #666;
       font-size: 15px;
     }
     .foot {
       margin-top: 40px;
       padding-top: 16px;
-      border-top: 1px solid #1c1b18;
-      color: #4a4944;
+      border-top: 1px solid #ddd;
+      color: #666;
       font-size: 14px;
     }
     @media (prefers-color-scheme: dark) {
-      body {
-        background: #161513;
-        color: #ece8e0;
+
+      html:not([data-theme="light"]) body {
+        background: #111;
+        color: #eee;
       }
-      h1, h2, h3 {
-        color: #f0ebe3;
+      html:not([data-theme="light"]) h1, html:not([data-theme="light"]) h2, html:not([data-theme="light"]) h3 {
+        color: #eee;
       }
-      h2 {
-        border-top-color: #ece8e0;
+      html:not([data-theme="light"]) h2 {
+        border-top-color: #333;
       }
-      a, a:visited {
-        color: #8fd4cf;
+      html:not([data-theme="light"]) a, html:not([data-theme="light"]) a:visited {
+        color: #eee;
       }
-      a:focus {
-        outline-color: #8fd4cf;
+      html:not([data-theme="light"]) a:focus {
+        outline-color: #eee;
       }
-      .tagline, .hint, .note, .foot {
-        color: #b5b1a8;
+      html:not([data-theme="light"]) .tagline, html:not([data-theme="light"]) .hint, html:not([data-theme="light"]) .note, html:not([data-theme="light"]) .foot, html:not([data-theme="light"]) .deck {
+        color: #999;
       }
-      .open a, .docs a,
-      .open a:visited, .docs a:visited {
-        background: #1e1d1a;
-        color: #ece8e0;
-        border-color: #ece8e0;
+      html:not([data-theme="light"]) .open a, html:not([data-theme="light"]) .docs a, html:not([data-theme="light"]) .back a,
+      html:not([data-theme="light"]) .open a:visited, html:not([data-theme="light"]) .docs a:visited, html:not([data-theme="light"]) .back a:visited {
+        background: #111;
+        color: #eee;
+        border-color: #eee;
       }
-      .open a:focus, .docs a:focus {
-        outline-color: #8fd4cf;
+      html:not([data-theme="light"]) .open a:focus, html:not([data-theme="light"]) .docs a:focus, html:not([data-theme="light"]) .back a:focus {
+        outline-color: #eee;
       }
-      .foot {
-        border-top-color: #ece8e0;
+      html:not([data-theme="light"]) .theme-toggle {
+        background: #111;
+        color: #eee;
+        border-color: #eee;
+      }
+      html:not([data-theme="light"]) .theme-toggle:focus {
+        outline-color: #eee;
+      }
+      html:not([data-theme="light"]) .foot {
+        border-top-color: #333;
+      }
+      html:not([data-theme="light"]) th, html:not([data-theme="light"]) td {
+        border-color: #333;
+      }
+      html:not([data-theme="light"]) th {
+        background: #333;
+      }
+      html:not([data-theme="light"]) .flow {
+        background: #111;
+        border-color: #333;
       }
     }
+
+      html[data-theme="dark"] body {
+        background: #111;
+        color: #eee;
+      }
+      html[data-theme="dark"] h1, html[data-theme="dark"] h2, html[data-theme="dark"] h3 {
+        color: #eee;
+      }
+      html[data-theme="dark"] h2 {
+        border-top-color: #333;
+      }
+      html[data-theme="dark"] a, html[data-theme="dark"] a:visited {
+        color: #eee;
+      }
+      html[data-theme="dark"] a:focus {
+        outline-color: #eee;
+      }
+      html[data-theme="dark"] .tagline, html[data-theme="dark"] .hint, html[data-theme="dark"] .note, html[data-theme="dark"] .foot, html[data-theme="dark"] .deck {
+        color: #999;
+      }
+      html[data-theme="dark"] .open a, html[data-theme="dark"] .docs a, html[data-theme="dark"] .back a,
+      html[data-theme="dark"] .open a:visited, html[data-theme="dark"] .docs a:visited, html[data-theme="dark"] .back a:visited {
+        background: #111;
+        color: #eee;
+        border-color: #eee;
+      }
+      html[data-theme="dark"] .open a:focus, html[data-theme="dark"] .docs a:focus, html[data-theme="dark"] .back a:focus {
+        outline-color: #eee;
+      }
+      html[data-theme="dark"] .theme-toggle {
+        background: #111;
+        color: #eee;
+        border-color: #eee;
+      }
+      html[data-theme="dark"] .theme-toggle:focus {
+        outline-color: #eee;
+      }
+      html[data-theme="dark"] .foot {
+        border-top-color: #333;
+      }
+      html[data-theme="dark"] th, html[data-theme="dark"] td {
+        border-color: #333;
+      }
+      html[data-theme="dark"] th {
+        background: #333;
+      }
+      html[data-theme="dark"] .flow {
+        background: #111;
+        border-color: #333;
+      }
   </style>
+  <script type="text/javascript">
+    (function () {
+      var v = null;
+      try { v = localStorage.getItem("work-theme"); } catch (e) {}
+      if (v === "dark" || v === "light") {
+        document.documentElement.setAttribute("data-theme", v);
+      }
+    })();
+  </script>
 </head>
 <body>
   <div class="wrap">
+    <div class="topbar">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme" title="Switch to dark theme">DRK</button>
+    </div>
     <h1>Work.</h1>
     <p class="tagline">An English description of this language-learning work, with links you can open on any device — including a first-generation iPad mini running Safari 9.</p>
 
@@ -217,5 +325,66 @@
 
     <p class="foot">Checked against the live Yibu page, the yibu and angolmag repositories, the tutor worker source, the AngolMag app source, and the four-page product sketch on 27 November 2026 (Europe/Budapest).</p>
   </div>
+  <script type="text/javascript">
+    (function () {
+      var KEY = "work-theme";
+      function readStored() {
+        try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      }
+      function writeStored(v) {
+        try { localStorage.setItem(KEY, v); } catch (e) {}
+      }
+      function systemDark() {
+        return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+      function isDark() {
+        var a = document.documentElement.getAttribute("data-theme");
+        if (a === "dark") return true;
+        if (a === "light") return false;
+        return systemDark();
+      }
+      function updateButton() {
+        var btn = document.getElementById("theme-toggle");
+        if (!btn) return;
+        var dark = isDark();
+        btn.innerHTML = dark ? "LGT" : "DRK";
+        var label = dark ? "Switch to light theme" : "Switch to dark theme";
+        btn.setAttribute("aria-label", label);
+        btn.title = label;
+      }
+      function apply(theme) {
+        if (theme === "dark" || theme === "light") {
+          document.documentElement.setAttribute("data-theme", theme);
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+        updateButton();
+      }
+      function init() {
+        var btn = document.getElementById("theme-toggle");
+        if (btn) {
+          btn.onclick = function () {
+            var next = isDark() ? "light" : "dark";
+            writeStored(next);
+            apply(next);
+          };
+        }
+        updateButton();
+        if (window.matchMedia) {
+          var mq = window.matchMedia("(prefers-color-scheme: dark)");
+          var onChange = function () {
+            if (readStored() !== "dark" && readStored() !== "light") updateButton();
+          };
+          if (mq.addListener) mq.addListener(onChange);
+          else if (mq.addEventListener) mq.addEventListener("change", onChange);
+        }
+      }
+      if (document.readyState === "loading") {
+        if (document.addEventListener) document.addEventListener("DOMContentLoaded", init, false);
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 </html>
