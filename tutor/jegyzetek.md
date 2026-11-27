@@ -26,7 +26,15 @@
 3. **Kvízek és kérdések** — a tutor ne csak mondogasson, hanem kérdezzen vissza, és csináltasson gyakorlást (pl. magyar szóra angol megfeleltetés).
 4. **Táblázatos, időzített visszahozás** — a diák jelezheti, melyik szót mennyire akarja, és mikor hozza vissza. Ez az app feladata (AngolMag / Yibu), nem az élő beszélgetésé.
 
+## Nyelvtani átvitel / interferencia (2026-11-27)
+- A tutor figyelje, hol ütközik a diák anyanyelvének nyelvtana a célnyelvvel.
+- Példa: a magyar nem használ névelőt, az angol igen — a "a" és "the" tipikus buktató magyar anyanyelvűeknek.
+- Amikor a diák anyanyelvi mintát visz át (pl. "I have hunger" a "éhes vagyok" helyett), a tutor ne hibaként kezelje, hanem mondja ki: ez magyaros szerkezet, angolul "I'm hungry."
+- A cél: a diák megtanulja felismerni a saját átviteli mintáit, ne csak javíttassa őket.
+- Ha az AI magától érzékeli, hogy valami nem stimmel, jelezze: ez más nyelvből áthozott szerkezeti lánc.
+
 ## Megjegyzés
 - 2026-11-27: Ez az első vázlat. A konkrét tantárgy még nincs megadva.
 - Amint tudjuk, melyik tantárggyal dolgozunk, ezt ki kell egészíteni.
 - 2026-11-27: Hozzáadva az angol tutor ötletek a mai beszélgetés alapján.
+- 2026-11-27: Hozzáadva a nyelvtani átvitel / interferencia szekció.
