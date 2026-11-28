@@ -49,3 +49,17 @@ var bothLangs = function bothLangs() {
 **Rule:** sentence language = UI language; subject of the question = target language (falling back to UI language when unset).
 
 **Status:** noted, not yet implemented in code.
+
+## 2026-11-28 — Walking podcast: short generated conversations for offline listening
+
+**Idea:** Add an option (not in AngolMag, in Yibu) to generate short, lightly simplified conversations based on the user's known vocabulary and/or words they are currently learning — ideally both. These mini-dialogues could be generated on the go (online) or saved for offline access, and listened to while walking.
+
+**Why it fits:** vocabulary-based generation beats generic filler — the learner hears words they actually use or are about to learn, in natural context. Offline storage makes it practical for walks without signal.
+
+**Open questions:**
+- Should generation happen client-side (bundled model / templates) or via the maria-tutor worker?
+- Audio: TTS on device vs pre-rendered audio files cached locally?
+- Length and format: how many exchanges per mini-conversation, and should it loop or be a fixed playlist?
+- How to surface it in the UI — a dedicated "Podcast" / "Séta" mode alongside chat?
+
+**Status:** idea logged, not started.
