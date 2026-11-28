@@ -20,7 +20,7 @@
 var bothLangs = function bothLangs() {
   var a = speechTag(uiLang), b = speechTag(practiceLang());
   return a === b ? a : a + "," + b;
-};
+);
 ```
 
 2. In `startRec()`, replaced `r.lang = recLang;` with `r.lang = bothLangs();`.
@@ -35,3 +35,17 @@ var bothLangs = function bothLangs() {
 - Any change to the maria-tutor system prompt (already handles Hungarian replies).
 
 **Next step:** test Hungarian speech on the live site; retry the Cloudflare connector for the STT worker param if the dictation page needs it.
+
+## 2026-11-28 — Opening line for new users (no memory yet)
+
+**Requirement:** For brand-new users with no saved memory/profile, the assistant's single opening sentence should be displayed in the **interface language**, and it should ask whether the user understands the **current target language**. If no target language has been set yet, the target language is the interface language itself.
+
+**Examples:**
+- Hungarian UI, English target: „Megérted angolul?"
+- Hungarian UI, Hungarian target (none set): „Megérted magyarul?"
+- English UI, English target: "Can you understand English?"
+- German UI, English target: "Verstehst du Englisch?"
+
+**Rule:** sentence language = UI language; subject of the question = target language (falling back to UI language when unset).
+
+**Status:** noted, not yet implemented in code.
